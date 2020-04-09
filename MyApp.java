@@ -7,13 +7,13 @@
  */
 public class MyApp
 {
-    String signal = "녹색";
-    double speed = 10;
-    
     public static void main(String[] args){
-        System.out.println();
+        String signal = "녹색";
+        double speed = 10;
+        RobotWalk(signal, speed);
+        System.out.println(speed);
     }
-    public void RobotWalk()
+    public static void RobotWalk(String signal, double speed)
     {
         if (signal == "녹색");
         
