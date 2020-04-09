@@ -7,7 +7,7 @@
  */
 public class MyApp
 {
-    String signal = "녹색";
+    String signal = "노란색";
     double speed = 10;
     
     public static void main(String[] args){
