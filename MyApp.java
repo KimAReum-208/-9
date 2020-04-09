@@ -9,6 +9,10 @@ public class MyApp
 {
     String signal = "녹색";
     double speed = 10;
+    
+    public static void main(String[] args){
+        System.out.println();
+    }
     public void RobotWalk()
     {
         if (signal == "녹색");
