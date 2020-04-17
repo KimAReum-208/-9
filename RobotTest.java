@@ -1,15 +1,51 @@
 
+
+import static org.junit.Assert.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
 /**
- * Write a description of class MyApp here.
+ * The test class RobotTest.
  *
- * @author (2017315002 김아름, 2018315022 이지연)
- * @version (2020.04.09)
+ * @author  (your name)
+ * @version (a version number or a date)
  */
 public class RobotTest
-{   
-    public static void main(String[] args){
-        String signal = "빨간색";
-        double speed = 10;
-        System.out.println(Robot.RobotWalk(signal, speed));
+{
+    /**
+     * Default constructor for test class RobotTest
+     */
+    public RobotTest()
+    {
+    }
+
+    /**
+     * Sets up the test fixture.
+     *
+     * Called before every test case method.
+     */
+    @Before
+    public void setUp()
+    {
+    }
+
+    /**
+     * Tears down the test fixture.
+     *
+     * Called after every test case method.
+     */
+    @After
+    public void tearDown()
+    {
+    }
+
+    @Test
+    public void RobotTest()
+    {
+        Robot robot2 = new Robot();
+        robot2.RobotWalk("녹색", 10.0);
+        assertEquals(10.0, robot2.getSpeed(), 0.1);
     }
 }
+
