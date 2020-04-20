@@ -39,13 +39,4 @@ public class RobotTest
     public void tearDown()
     {
     }
-
-    @Test
-    public void RobotTest()
-    {
-        Robot robot2 = new Robot();
-        robot2.RobotWalk("녹색", 10.0);
-        assertEquals(10.0, robot2.getSpeed(), 0.1);
-    }
 }
-

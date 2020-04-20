@@ -1,4 +1,5 @@
 
+import java.util.Scanner;
 /**
  * Write a description of class MyApp here.
  *
@@ -7,19 +8,13 @@
  */
 public class MyApp
 {
-    String signal = "녹색";
-    double speed = 10;
-    
-    public static void main(String[] args){
-        System.out.println();
-    }
-    public void RobotWalk()
-    {
-        if (signal == "녹색");
+    public static void main(String args[]){
+        String signal = "녹색";
+        System.out.print("speed = ");
+        Scanner scanner = new Scanner(System.in);
+        double speed = scanner.nextDouble();
         
-        else if(signal == "노란색")
-            speed = speed * 1.2;
-        else
-            speed = 0;
+        Robot robot = new Robot();
+        robot.RobotWalk(signal, speed);
     }
 }
