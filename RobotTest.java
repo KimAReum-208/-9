@@ -8,8 +8,8 @@ import org.junit.Test;
 /**
  * The test class RobotTest.
  *
- * @author  (your name)
- * @version (a version number or a date)
+ * @author  (2017315002 김아름, 2018315022 이지연)
+ * @version (2020.04.22)
  */
 public class RobotTest
 {
@@ -39,4 +39,31 @@ public class RobotTest
     public void tearDown()
     {
     }
+
+    @Test
+    public void RobotWalk_Test_1()
+    {
+        Robot robot1 = new Robot();
+        robot1.RobotWalk("녹색", 10.0);
+        assertEquals(10.0, robot1.getSpeed(), 0.0);
+    }
+
+    @Test
+    public void RobotWalk_Test_2()
+    {
+        Robot robot1 = new Robot();
+        robot1.RobotWalk("노란색", 10.0);
+        assertEquals(12.0, robot1.getSpeed(), 0.0);
+    }
+
+    @Test
+    public void RobotWalk_Test_3()
+    {
+        Robot robot2 = new Robot();
+        robot2.RobotWalk("붉은색", 10.0);
+        assertEquals(0.0, robot2.getSpeed(), 0.0);
+    }
 }
+
+
+

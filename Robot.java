@@ -12,8 +12,8 @@ public class Robot
     
     public void RobotWalk(String signal, double speed)
     {
-        if (signal.equals("녹색"));
-            //this.speed = speed;
+        if (signal.equals("녹색"))
+            this.speed = speed;
         else if(signal.equals("노란색"))
             this.speed = speed * 1.2;
         else
